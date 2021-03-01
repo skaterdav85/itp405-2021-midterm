@@ -9,7 +9,7 @@ class QuestionController extends Controller
 {
     public function index()
     {
-        $questions = Question::orderBy('created_at', 'desc')->get();
+        $questions = Question::with(['answers'])->orderBy('created_at', 'desc')->get();
 
         return view('questions.index', [
             'questions' => $questions,
@@ -33,8 +33,14 @@ class QuestionController extends Controller
 
     public function show($id)
     {
+        $question = Question::find($id);
+
+        if (!$question) {
+            return redirect()->route('questions.index');
+        }
+
         return view('questions.show', [
-            'question' => Question::find($id),
+            'question' => $question,
         ]);
     }
 }

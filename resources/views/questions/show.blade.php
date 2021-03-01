@@ -36,7 +36,7 @@
         <input type="hidden" name="question" value="{{ $question->id }}">
         <div class="form-group">
             <h4 class="bg-primary text-white p-3">
-                Answer the question!
+                Answer
             </h4>
             <textarea
                 name="answer"

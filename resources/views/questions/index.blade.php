@@ -35,7 +35,7 @@
             </h3>
             <div class="ml-3">
                 <span class="badge bg-secondary">
-                    {{ $question->answers()->count() }} answers
+                    {{ count($question->answers) }} answers
                 </span>
             </div>
         </div>
