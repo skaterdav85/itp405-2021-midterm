@@ -11,8 +11,8 @@
         </h4>
         <div class="border-bottom mt-3 pb-3 mb-3">
             <em>
-                Posted on {{ date_format(date_create($answer->created_at), 'n/j/Y') }} at
-                {{ date_format(date_create($answer->created_at), 'G:i A') }}
+                Posted on {{ $answer->created_at->format('n/j/Y') }} at
+                {{ $answer->created_at->format('G:i A') }}
             </em>
         </div>
     @empty

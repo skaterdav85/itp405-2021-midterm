@@ -2,7 +2,7 @@
 
 The goal of this project is to build a simple Q&A website. A visitor should be able to ask questions and leave answers without any authentication.
 
-[Here is a working example of what you're going to build](https://itp405-2021-midterm.herokuapp.com/). The styles don't need to match exactly, but you should display all of the same data and have the same URLs and document titles (the browser tab title). It should _function_ exactly the same as the example.
+[Here is a working example of what you're going to build](https://itp405-2021-midterm.herokuapp.com/). The styles don't need to match exactly, but you should display all of the same data and have the same URLs and document titles (the browser tab title). The timestamps don't need to be formatted like the example. Your application should _function_ exactly the same as the example.
 
 ## Creating the Database
 
@@ -83,7 +83,7 @@ To display the number of answers for a question, you can use the [`count()`](htt
     - The question that the answer belongs to must exist in the database
 
 1. A green success alert/notification should be shown when an answer is created. See the example.
-1. The list of answers **must** be sorted from **newest to oldest**.
+1. The list of answers **must** be sorted from **newest to oldest**. While I didn't cover how to do this with Eloquent, you know how to do this with the Query Builder.
 1. If a user tries to visit a Question page for a question that doesn't exist, such as https://itp405-2021-midterm.herokuapp.com/questions/999999999999, redirect to the Questions page.
 
 ## Other Requirements
