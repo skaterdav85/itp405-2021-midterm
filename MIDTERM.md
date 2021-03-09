@@ -90,3 +90,4 @@ To display the number of answers for a question, you can use the [`count()`](htt
 
 1. All routes should have names and all URLs in the app should be generated from the route names.
 1. Before you finish the exam, please delete all questions and answers from your database.
+1. All pages should share the same Blade layout
